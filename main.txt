@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+		<link rel="stylesheet" href="main.css">
+	</head>
+
+	<body>
+		{if}"{EINSATZ}"=="-1"{then}
+		<div id="titel">
+			<h1 class="titel_rot">Informationen</h1>
+		</div>
+		{VERFUEGBARKEIT}
+		<div id="datum_uhrzeit">
+			<div class=".uhrzeit">{ZEIT}</div>
+			<div class=".datum">{TAG}, den {DATUM}</div>
+		</div>
+			<table style="margin-top: 50px;">	
+			{sql}SELECT * FROM EREIGNISSE WHERE CURRENT_TIMESTAMP BETWEEN beginn AND ende ORDER BY strasse|
+				  <tr>
+					<td class="table_ereignis_bezeichnung">%TYP%</td>
+					<td class="table_ereignis_info">%BEZEICHNUNG%</td> 
+					<td class="table_ereignis_ort"><b>%OBJEKTNAME%</b> %STRASSE% %ORTSTEIL%</td>
+					<td class="table_ereignis_zeit">%BEGINN% <br> - <br> %ENDE%</td>
+				  </tr>
+			{/sql}
+			</table>
+		{endif}
+
+	{if}"{EINSATZ}"<>"-1"{then}
+		{VERFUEGBARKEIT}
+		<div id="datum_uhrzeit">
+			<div class=".uhrzeit">{ZEIT}</div>
+			<div class=".datum">{TAG}, den {DATUM}</div>
+		</div>	
+			{sql}SELECT SUBSTRING(EINSAETZE.STICHWORT_KLARTEXT from 1 for POSITION('$' in REPLACE(EINSAETZE.STICHWORT_KLARTEXT, '   ', '$'))) AS STICHWORT,EINSAETZE.STICHWORT_KLARTEXT,EINSAETZE.MELDUNG,EINSAETZE.OBJEKTNAME,EINSAETZE.STRASSE,EINSAETZE.HAUSNUMMER,EINSAETZE.ORT,EINSAETZE.ORTSTEIL, OBJEKTE.NUMMER, OBJEKTE.ANFAHRT FROM EINSAETZE INNER JOIN OBJEKTE ON EINSAETZE.OBJEKTNAME = OBJEKTE.OBJEKT WHERE EINSAETZE.EINSATZNUMMER LIKE '{EINSATZ}'|
+
+		<div>
+			<div id="titel">
+				<h1 class="alarm_stichwort">%STICHWORT%</h1>
+				<div class="alarm_meldung">%MELDUNG%</div>
+			</div>
+						
+			{APRTRM}
+		</div>
+		
+						<br>
+						<p id="alarm_anschrift">%NUMMER%</p>
+						<p id="alarm_anschrift">%OBJEKTNAME% %ORTSTEIL%</p>
+						<p id="alarm_anschrift">%STRASSE% %HAUSNUMMER%, %ORT%</p>
+						<p id="alarm_anschrift">%ANFAHRT%</p>
+						
+			{/sql}
+			
+				{sql}SELECT EM_EINSAETZE.RUFNAME,EINSATZMITTEL.STATUS,round((CHAR_LENGTH(einsatzmittel.rufname)+4)*0.2) AS LENGTH, EINSATZMITTEL.RUFNAMELANG FROM EM_EINSAETZE INNER JOIN EINSATZMITTEL ON EM_EINSAETZE.RUFNAME=EINSATZMITTEL.RUFNAME WHERE EM_EINSAETZE.EINSATZNUMMER='{EINSATZ}' AND AKTIV=1 ORDER BY ID|
+			<div id="alarm_aao">
+			<div id="alarm_embox">	
+						<div id="alarm_status" style="background: %STATUSFARBE%">%STATUS%</div>
+						<div id="alarm_em%LENGTH%">%RUFNAMELANG%<br />%RUFNAME%</div>
+												
+			</div>
+			</div>
+			{/sql}
+	{endif}
+
+	</body>
+</html>

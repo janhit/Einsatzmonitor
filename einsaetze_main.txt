@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+		<link rel="stylesheet" href="main.css">
+	</head>
+
+	<body>
+		<div id="seitenkopf">		
+			<div id="titel">
+				<h1 class="titel_orange">Letzte Eins&auml;tze</h1>
+			</div>
+		</div>
+		<div id="datum_uhrzeit">
+			<div class=".uhrzeit">{ZEIT}</div>
+			<div class=".datum">{TAG}, den {DATUM}</div>
+		</div>
+		<table style="margin-top: 50px;">
+			<thead>
+				<tr>
+					<th>Alarmzeit</th>
+					<th>E.-Art</th>
+					<th>Stichwort</th>
+					<th>Meldung</th>
+					<th>Einsatzort</th>
+					<th>Status</th>
+				</tr>
+			</thead>	
+		{sql}select first 7 einsaetze.EROEFF,EINSATZART,STICHWORT,MELDUNG,OBJEKTNAME,STRASSE,ORTSTEIL,STATUS from einsaetze order by einsatznummer desc|
+			  <tr>
+				<td class="table_ereignis_eroeff">%EROEFF%</td>
+				<td class="table_ereignis_eart">%EINSATZART%</td> 
+				<td class="table_ereignis_stichwort">%STICHWORT%</td> 
+				<td class="table_ereignis_meldung">%MELDUNG%</td> 
+				<td class="table_ereignis_ort"><b>%OBJEKTNAME%</b> %STRASSE% %ORTSTEIL%</td>
+				<td class="table_ereignis_status">%STATUS%</td>
+			  </tr>
+		{/sql}
+		</table>
+	</body>
+</html>

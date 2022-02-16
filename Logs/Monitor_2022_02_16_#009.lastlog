@@ -1,0 +1,4 @@
+16.02.22 | 20:29:37 | Hinweis   | Monitor wird gestartet, bitte warten...
+16.02.22 | 20:29:37 | FEHLER    | Keine Verbindung zur Datenbank.
+16.02.22 | 20:29:37 | CRITICAL  | SQL-Error: [FireDAC][Phys][FB]Dynamic SQL Error<CR><LF>SQL error code = -206<CR><LF>Column unknown<CR><LF>At line 1, column 46
+16.02.22 | 20:30:07 | CRITICAL  | SQL-Error: [FireDAC][Phys][FB]Dynamic SQL Error<CR><LF>SQL error code = -206<CR><LF>Column unknown<CR><LF>At line 1, column 46

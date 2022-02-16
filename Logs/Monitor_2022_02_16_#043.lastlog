@@ -1,0 +1,3 @@
+16.02.22 | 21:44:40 | Hinweis   | Monitor wird gestartet, bitte warten...
+16.02.22 | 21:44:40 | FEHLER    | Keine Verbindung zur Datenbank.
+16.02.22 | 21:44:40 | CRITICAL  | SQL-Error: [FireDAC][Phys][FB]Dynamic SQL Error<CR><LF>SQL error code = -104<CR><LF>Token unknown - line 1, column 123<CR><LF>AS

@@ -1,0 +1,12 @@
+<div style="float:right; padding: 10px">
+			<div id="alarm_rueckbox">	
+						<div id="alarm_rueckzahl" style="background:red">{sql}select count(ISSI) FROM TETRA_ENDGERAETE WHERE RM_VALUE=32769 AND RM_TIME>dateadd(-1 hour to current_timestamp)|%COUNT%{/sql}</div>
+						<div id="alarm_ruecktitel">N. Verfügbar</div>
+			</div>
+		</div>
+		<div style="float:right; margin: 10px; margin-left: 20px; padding-left: 20px; border-left: 3px solid white;">
+				<div id="alarm_rueckbox">	
+						<div id="alarm_rueckzahl" style="background:#0BBF0B">{sql}select count(ISSI) FROM TETRA_ENDGERAETE WHERE RM_VALUE=32769 AND RM_TIME>dateadd(-1 hour to current_timestamp)|%COUNT%{/sql}</div>
+						<div id="alarm_ruecktitel">Verfügbar</div>
+				</div>
+		</div>

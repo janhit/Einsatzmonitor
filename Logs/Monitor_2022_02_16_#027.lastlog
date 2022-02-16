@@ -1,0 +1,3 @@
+16.02.22 | 21:03:15 | Hinweis   | Monitor wird gestartet, bitte warten...
+16.02.22 | 21:03:15 | FEHLER    | Keine Verbindung zur Datenbank.
+16.02.22 | 21:03:16 | CRITICAL  | SQL-Error: [FireDAC][Phys][FB]Dynamic SQL Error<CR><LF>SQL error code = -206<CR><LF>Column unknown<CR><LF>REINSAETZE.STICHWORT_KLARTEXT<CR><LF>At line 1, column 8

@@ -1,0 +1,12 @@
+<div id="alarm_rueckmeldung">
+				<div id="alarm_rueckbox" style="margin-left: 10px">	
+						<div id="alarm_rueckzahl" style="background:#FD0000">{innersql}select count(ISSI) FROM TETRA_ENDGERAETE WHERE RM_VALUE=32768 AND RM_TIME>dateadd(-1 hour to current_timestamp)|%COUNT%{/innersql}</div>
+						<div id="alarm_ruecktitel">Komme nicht</div>
+				</div>
+				
+				<div id="alarm_rueckbox">	
+						<div id="alarm_rueckzahl" style="background:#0BBF0B">{innersql}select count(ISSI) FROM TETRA_ENDGERAETE WHERE RM_VALUE=32769 AND RM_TIME>dateadd(-1 hour to current_timestamp)|%COUNT%{/innersql}</div>
+						<div id="alarm_ruecktitel">Komme</div>
+				</div>
+								
+			</div>

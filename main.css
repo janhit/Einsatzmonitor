@@ -1,0 +1,394 @@
+body {
+  background-color: #393939;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+  height: 100%;
+  padding: 30px;
+}
+
+p {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 0.5em;
+}
+
+table {
+  border-bottom: 1px solid #848484;
+  border-collapse: collapse;
+  width: 100%;
+  float: left;
+}
+
+th {
+  background-color: #848484;
+  color: #393939;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  padding: 20px 0px 20px 0px;
+}
+
+td {
+  border-top: 1px solid #848484;
+}
+
+.standard2spaltig {
+  font-size: 18px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/*Headerbereich außerhalb Alarm */
+
+#seitenkopf {
+  float: left;
+}
+
+#titel {
+  float: left;
+  padding-left: 15px;
+}
+
+#subtitel {
+  padding-left: 15px;
+  color: #848484;
+  font-size: 60px;
+  font-style: italic;
+  text-indent: 25px;
+  float: left;
+}
+
+.titel_gruen {
+  color: #fff;
+  padding-left: 8px;
+  border-left: 4px solid #088a08;
+  width: 100%;
+}
+
+.titel_orange {
+  color: #fff;
+  padding-left: 8px;
+  border-left: 4px solid #ff8000;
+  width: 100%;
+}
+
+.titel_blau {
+  color: #fff;
+  padding-left: 8px;
+  border-left: 4px solid #0404b4;
+  width: 100%;
+}
+
+.titel_rot {
+  color: #fff;
+  padding-left: 8px;
+  border-left: 4px solid #d40000;
+}
+
+#datum_uhrzeit {
+  float: right;
+}
+
+.datum {
+  float: right;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+.uhrzeit {
+  float: right;
+  font-size: 80px;
+  font-weight: lighter;
+}
+
+.main_content {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.main_content_links {
+  float: left;
+  width: 48%;
+}
+
+.main_content_rechts {
+  float: right;
+  width: 48%;
+}
+
+/*Monitor wenn ein Einsatz anliegt*/
+
+.alarm_stichwort {
+  color: #fff;
+  padding-left: 8px;
+  border-left: 4px solid #d40000;
+}
+
+.alarm_meldung {
+  color: #848484;
+  font-size: 60px;
+  font-style: italic;
+  text-indent: 25px;
+  margin-bottom: 60px;
+}
+
+#alarm_anschrift {
+  color: #fff;
+  font-size: 70px;
+  text-indent: 25px;
+}
+
+#alarm_aao {
+  margin-top: 50px;
+  float: left;
+  border-radius: 8px;
+}
+
+#alarm_embox {
+  margin-right: 20px;
+  background: #2e2e2e;
+  border-radius: 8px;
+  box-shadow: 2px 4px 8px rgb(0, 0, 0);
+}
+
+#alarm_status {
+  text-align: center;
+  color: #000000;
+  background: #d40000;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 25px;
+  width: 50px;
+  height: 75px;
+  float: left;
+  border-radius: 8px;
+  box-shadow: 2px 4px 8px rgb(0, 0, 0);
+}
+
+#alarm_em {
+  text-align: center;
+  color: red;
+  font-size: 30px;
+  padding: 20px;
+  width: 270px;
+  box-shadow: 2px 4px 8px rgb(0, 0, 0);
+}
+
+#alarm_em1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 36px;
+  padding: 19px;
+  width: 270px;
+  white-space: nowrap;
+}
+
+#alarm_em2 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 31px;
+  padding: 20px;
+  width: 270px;
+  white-space: nowrap;
+}
+
+#alarm_em3 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
+  padding: 20px;
+  width: 270px;
+  white-space: nowrap;
+}
+
+#alarm_em4 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 24px;
+  width: 270px;
+  white-space: nowrap;
+}
+
+#alarm_em5 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 25px;
+  width: 270px;
+  white-space: nowrap;
+}
+
+#alarm_rueckmeldung {
+  float: right;
+  width: 160px;
+}
+
+#alarm_rueckbox {
+  margin-bottom: 10px;
+  border: 6px solid #2e2e2e;
+  background: #2e2e2e;
+  float: right;
+}
+
+#alarm_rueckzahl {
+  text-align: center;
+  color: #000000;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 115px;
+}
+
+#alarm_ruecktitel {
+  text-align: center;
+  font-size: 16px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 105px;
+}
+
+/*Tabelle Ereignisse im Ruhezustand des Monitors */
+
+.table_ereignis_bezeichnung {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-weight: bold;
+  width: 20%;
+}
+
+.table_ereignis_info {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 20%;
+}
+
+.table_ereignis_ort {
+  font-size: 25px;
+  text-align: center;
+  line-height: 1.5;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 30%;
+}
+
+.table_ereignis_zeit {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  line-height: 0.9;
+  width: 10%;
+}
+
+/*Tabelle Ereignisse im Ruhezustand des Monitors */
+
+.table_ereignis_eroeff {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 12%;
+}
+
+.table_ereignis_eart {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  width: 7%;
+}
+
+.table_ereignis_stichwort {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  width: 10%;
+}
+
+.table_ereignis_meldung {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 20%;
+}
+
+.table_ereignis_ort {
+  font-size: 25px;
+  text-align: center;
+  line-height: 1.5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 30%;
+}
+
+.table_ereignis_status {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 10%;
+}
+
+/* Allgemeine  Tabllentypen */
+
+.table_middle {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.table_larger {
+  font-size: 36px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.table_large {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.table_small {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
