@@ -66,8 +66,8 @@ td {
 }
 
 #titel {
-  padding-left: 15px;
   text-align: center;
+  padding-left: 15px;
 }
 
 #subtitel {
@@ -143,112 +143,67 @@ td {
 .alarm_stichwort {
   color: #fff;
   padding-left: 8px;
+  border-left: 4px solid #d40000;
 }
 
 .alarm_meldung {
-  color: white;
+  color: #848484;
   font-size: 60px;
   font-style: italic;
   text-indent: 25px;
   margin-bottom: 60px;
 }
 
-#alarm_anschrift_bold {
-  color: #fff;
-  font-size: 70px;
-  font-weight: bold;
-}
-
 #alarm_anschrift {
   color: #fff;
   font-size: 70px;
-}
-
-#alarm_anschrift_anfahrt {
-  color: rgb(150, 148, 148);
-  font-size: 60px;
-  margin-top: 30px;
+  text-indent: 25px;
 }
 
 #alarm_aao {
-  margin-top: 50px;
+  margin-top: 24px;
   float: left;
+  border-radius: 8px;
 }
 
 #alarm_embox {
   margin-right: 20px;
-  margin-top: 50px;
-  border: 4px solid #2e2e2e;
-  font-weight: bold;
   background: #2e2e2e;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 2px 4px 8px rgb(0, 0, 0);
   float: left;
-  height: 70px;
 }
 
 #alarm_status {
   text-align: center;
   color: #000000;
-  font-size: 70px;
+  background: #d40000;
+  font-size: 60px;
   font-weight: bold;
-  padding: 20px;
-  padding-bottom: 20px;
-  padding-top: 5px;
-  margin-top: 15px;
-  width: 80px;
+  padding: 10px;
+  margin-left: 5px;
+  width: 75px;
+  height: 75px;
   float: left;
-  height: 80px;
+  border-radius: 8px;
+  box-shadow: 2px 4px 8px rgb(0, 0, 0);
 }
 
 #alarm_em {
   text-align: center;
-  color: white;
-  font-size: 40px;
-  padding: 20px;
-  margin-left: 75px;
-  width: 270px;
-}
-
-#alarm_em1 {
-  text-align: center;
-  color: #ffffff;
-  font-size: 36px;
-  padding: 19px;
-  width: 270px;
-  white-space: nowrap;
-}
-
-#alarm_em2 {
-  text-align: center;
-  color: #ffffff;
-  font-size: 31px;
-  padding: 20px;
-  width: 270px;
-  white-space: nowrap;
-}
-
-#alarm_em3 {
-  text-align: center;
-  color: #ffffff;
+  color: red;
   font-size: 30px;
   padding: 20px;
   width: 270px;
-  white-space: nowrap;
-}
-
-#alarm_em4 {
-  text-align: center;
-  color: #ffffff;
-  font-size: 22px;
-  padding: 24px;
-  width: 270px;
-  white-space: nowrap;
+  box-shadow: 2px 4px 8px rgb(0, 0, 0);
 }
 
 #alarm_em5 {
   text-align: center;
   color: #ffffff;
-  font-size: 20px;
-  padding: 25px;
+  font-size: 25px;
+  padding: 15px;
   width: 270px;
   white-space: nowrap;
 }
@@ -295,7 +250,7 @@ td {
 }
 
 .table_ereignis_info {
-  font-size: 30px;
+  font-size: 20px;
   font-style: italic;
   text-align: center;
   padding-top: 12px;
@@ -304,7 +259,7 @@ td {
 }
 
 .table_ereignis_ort {
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   line-height: 1.5;
   padding-top: 12px;
@@ -313,7 +268,7 @@ td {
 }
 
 .table_ereignis_zeit {
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   padding-top: 12px;
   padding-bottom: 12px;

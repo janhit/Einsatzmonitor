@@ -1,0 +1,3 @@
+01.03.22 | 21:33:30 | Hinweis   | Monitor wird gestartet, bitte warten...
+01.03.22 | 21:33:30 | FEHLER    | Keine Verbindung zur Datenbank.
+01.03.22 | 21:33:30 | CRITICAL  | SQL-Error: [FireDAC][Phys][FB]Dynamic SQL Error<CR><LF>SQL error code = -206<CR><LF>Column unknown<CR><LF>OBJEKTE.OBJEKTNAME<CR><LF>At line 1, column 158
