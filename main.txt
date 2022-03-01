@@ -49,7 +49,7 @@
 						
 			{APRTRM}
 		</div>
-		
+	
 						<br>
 						<p id="alarm_anschrift_bold">%OBJEKTNAME% %ORTSTEIL%</p>
 						<p id="alarm_anschrift">%STRASSE% %HAUSNUMMER%, %ORT%</p>
